@@ -1,18 +1,10 @@
 # Employee Attrition & HR Analytics Project (SPSS)
 
-**Author:** Kian KKK  
-**Date:** July 2025  
-**Tool:** IBM SPSS Statistics  
-**Dataset:** IBM HR Analytics – Employee Attrition & Performance
-
----
-
-## Project Overview
 
 This project investigates key factors that influence **employee attrition, satisfaction, and salary**, using a real-world HR dataset.  
 All analyses were conducted using **IBM SPSS Statistics**, combining statistical reasoning with practical HR insights.
 
-The project addresses the following core questions:
+I try to answer:
 - What variables best predict employee attrition?
 - How does satisfaction relate to retention or income?
 - Are salary differences significant across marital or academic fields?
