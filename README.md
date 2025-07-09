@@ -1,119 +1,125 @@
-# Employee Attrition & HR Analytics Project (SPSS)
+# 🎯 Employee Attrition & HR Analytics Project (SPSS-Based Study)
+
+This project explores the **key organizational, psychological, and financial factors** influencing employee attrition, satisfaction, and compensation using a real-world dataset of over **1,400 employees**!
+
+Leveraging **IBM SPSS Statistics**, the analysis combines robust statistical techniques with APA-style reporting to draw actionable insights for HR decision-making.
 
 
-This project investigates key factors that influence **employee attrition, satisfaction, and salary**, using a real-world HR dataset.  
-All analyses were conducted using **IBM SPSS Statistics**, combining statistical reasoning with practical HR insights.
+<br>
 
-I try to answer:
-- What variables best predict employee attrition?
-- How does satisfaction relate to retention or income?
-- Are salary differences significant across marital or academic fields?
-- Can we model the psychological and structural pathways behind attrition?
+## I Try to Answer:
 
----
+- What are the strongest predictors of employee attrition?
+- How does satisfaction relate to retention and salary?
+- Are salary differences statistically significant across marital statuses or educational backgrounds?
+- Can we model structural and psychological pathways contributing to attrition?
 
-## Dataset: IBM HR Analytics – Employee Attrition & Performance
 
-This dataset provides a wide view of organizational behavior, job roles, performance, and turnover.
+<br>
 
-**Variables include:**
-- Demographics: Age, Gender, Education, Marital Status  
-- Job: Job Role, Job Level, Department, OverTime  
-- Satisfaction: Work-Life Balance, Environment, Relationship  
-- Experience: Years at Company, Promotion History  
-- Compensation: Monthly Income, Stock Options  
-- Target: **Attrition** (Yes/No)
+## Dataset: IBM HR Analytics — Attrition & Performance
 
-**Source (Kaggle):**  
-[IBM HR Analytics – Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+A comprehensive HR dataset including:
 
-**Applicable Statistical Techniques:**
-- Logistic Regression
-- One-Way ANOVA
-- Correlation
-- Factor Analysis (EFA)
-- Path Analysis
-- T-Tests, Cluster Analysis, PCA
+**Key variable groups:**
+- **Demographics:** Age, Gender, Education, Marital Status  
+- **Job Details:** Role, Department, OverTime, Job Level  
+- **Satisfaction Metrics:** Environment, Work-Life Balance, Relationships  
+- **Experience:** Years at Company, Promotion History  
+- **Compensation:** Monthly Income, Stock Options  
+- **Target Variable:** `Attrition` (Yes / No)
 
----
+📌 **Source**: [Kaggle – IBM HR Analytics Dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 
-## Project Files
+<br>
+
+## Applied Statistical Techniques
+
+- Logistic Regression  
+- One-Way ANOVA  
+- Pearson Correlation  
+- Exploratory Factor Analysis (EFA)  
+- Path Analysis  
+- Cluster Analysis, PCA  
+- Independent & Paired Samples t-Tests  
+
+<br>
+
+## Project Repository Structure
 
 | File | Description |
 |------|-------------|
-| 📄 [Final Report (PDF)](https://github.com/YasinShamsedini/SPSS-AttritionIBMAnalysis/blob/main/Files/SPSS-IBM.pdf) | Comprehensive analysis with findings |
-| 📊 [SPSS Output File (.spv)](https://github.com/YasinShamsedini/SPSS-AttritionIBMAnalysis/blob/main/Files/Output%20SPSS%20IBM.spv) | Original SPSS output file |
-| 📂 [SPSS Data File (.sav)](https://github.com/YasinShamsedini/SPSS-AttritionIBMAnalysis/blob/main/Files/SPSS%20IBM.sav) | Cleaned and structured SPSS dataset |
-| 📈 [Raw Excel Dataset](https://github.com/YasinShamsedini/SPSS-AttritionIBMAnalysis/blob/main/Files/final_data.xlsx) | Unprocessed HR data |
-| 📉 [Z-Score Data File](https://github.com/YasinShamsedini/SPSS-AttritionIBMAnalysis/blob/main/Files/z_score.xlsx) | Outlier detection and normalized values |
+| 📄 [Final Report (PDF)](./Files/SPSS-IBM.pdf) | Full APA-style analysis and interpretation |
+| 📊 [SPSS Output (.spv)](./Files/Output%20SPSS%20IBM.spv) | Original statistical outputs |
+| 📂 [SPSS Dataset (.sav)](./Files/SPSS%20IBM.sav) | Final cleaned dataset |
+| 📈 [Final Excel File](./Files/final_data.xlsx) | Final cleaned Excel |
+| 📉 [Z-Score Data](./Files/z_score.xlsx) | Normalized variables and outlier detection |
+
+
+<br>
 
 ---
 
-## Analysis Summary
+<br>
 
-### 1. Attrition Modeling
-- **Monthly Income** and **Stock Options** are strong predictors (*p* < 0.001).
-- Model accuracy was 83.3%, but failed to detect actual leavers due to class imbalance.
+# My Journey...
+## Started this way!
 
-### 2. Relationship Satisfaction & Attrition
-- Borderline significance (*p* = 0.054).
-- Interpersonal satisfaction may affect turnover mildly.
+### 🔹 Attrition Prediction
+- **Income** and **stock options** were significant predictors (*p* < .001).  
+- Overall model accuracy: **83.3%**; however, recall for actual leavers was poor due to class imbalance.
 
-### 3. Correlation with Total Working Years
-- Weak negative correlation (r = –.182, *p* < .001).
-- Employees with more experience are slightly more stable.
+### 🔹 Satisfaction & Turnover
+- Relationship satisfaction was borderline significant (*p* = .054), hinting at a potential soft influence on attrition.
 
-### 4. Factor Analysis: Education, Training, Experience
-- One factor extracted (FAC1_1), but with weak internal consistency (α = 0.036).
-- Logistic regression significant (*p* < .001) but not useful in classification.
+### 🔹 Experience vs Retention
+- Weak negative correlation with total working years (*r* = –.182, *p* < .001), suggesting longer-tenured employees are more stable.
 
-### 5. Job Involvement by Field of Study
-- ANOVA results: no significant difference (*p* = 0.943).
-- Mean job involvement scores were similar across fields.
+### 🔹 Factor Analysis (Training & Education)
+- One weak factor emerged with low reliability (α = 0.036). Regression using this factor was statistically significant but weak in predictability.
 
-### 6. Salary Differences by Marital Status
-- Significant difference between **single vs married** employees (*p* = 0.018).
-- Married employees earned ~$688 more on average.
+### 🔹 ANOVA – Job Involvement Across Fields
+- No significant differences across education fields (*p* = 0.943).
 
-### 7. Path Analysis: Satisfaction → Income
-- Model:  
-  `RelationshipSatisfaction, EnvironmentSatisfaction, JobLevel → JobSatisfaction → MonthlyIncome`
-- None of the paths were statistically significant.
-- Suggests income is likely driven by structural factors.
+### 🔹 Salary by Marital Status
+- Significant income gap found (*p* = 0.018), with married employees earning ~$688 more on average.
+
+### 🔹 Path Model – Satisfaction to Income
+- Structural path model was not statistically supported. Satisfaction did not significantly predict income.
 
 ---
 
-## Key Takeaways
+## 🧠 Insights & Implications
 
-- **Financial incentives** matter more than emotional or perceptual satisfaction in attrition.
-- Predictive models need **balanced data** for accuracy.
-- Not all workplace factors translate to behavioral change (e.g., satisfaction ≠ income).
-- Combining statistical modeling with HR insight reveals powerful relationships.
-
----
-
-## Tools Used
-
-- IBM SPSS Statistics (v26)
-- Microsoft Excel
-- GitHub for documentation and sharing
+- **Monetary incentives** appear to have a stronger effect on attrition than emotional or perceptual satisfaction.  
+- Data imbalance can limit the predictive power of logistic models.  
+- Not all perceived workplace metrics translate to behavioral outcomes.  
+- Combining **quantitative modeling** with HR understanding can yield deep and practical insights.
 
 ---
 
-## Author Note
+## 🛠 Tools & Technologies
 
-This project was completed as part of an academic training in applied HR analytics. It reflects both technical statistical analysis and strategic HR interpretation.  
-Feel free to fork, reference, or build on this project for your own learning or research.
+- IBM SPSS Statistics (v26)  
+- Microsoft Excel  
+- GitHub for version control and publication
 
 ---
 
-## Contact
+## 👨‍💼 Author Note
 
-Want to collaborate or share feedback?
+This project was completed as part of a structured academic training in applied statistics and HR analytics.  
+It demonstrates the integration of statistical methodology with real-world organizational interpretation and APA-standard reporting.
+
+---
+
+## 📬 Contact & Collaboration
+
+Interested in collaboration, research, or feedback?
 
 📧 Email: [YourEmail@example.com]  
 🔗 LinkedIn: [Your LinkedIn Profile]
 
 ---
 
-> “Data without interpretation is just noise. This project turns HR data into actionable insight.”
+> 🧩 *“Without interpretation, data is noise. With statistical insight, it becomes strategy.”*
