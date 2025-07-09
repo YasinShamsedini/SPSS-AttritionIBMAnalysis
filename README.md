@@ -56,70 +56,52 @@ A comprehensive HR dataset including:
 | 📉 [Z-Score Data](./Files/z_score.xlsx) | Normalized variables and outlier detection |
 
 
-<br>
+<br><br>
 
----
+# 📌My Journey
 
-<br>
 
-# My Journey...
-## Started this way!
+### 1. Downloading...
+Data was downloaded from [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
+<br><br>
+### 2. Preprocessing and Normalizing
+I started data preprocessing in Excel.  
+First, I looked for missing values — fortunately, there were none.  
+After that, I created a new column for each string-based column and converted their values to numeric codes (for example, department codes were defined in the `DepCode` column).
 
-### 🔹 Attrition Prediction
-- **Income** and **stock options** were significant predictors (*p* < .001).  
-- Overall model accuracy: **83.3%**; however, recall for actual leavers was poor due to class imbalance.
+Then, I calculated **z-scores** for several columns to detect outlier values. The results can be found in:  
+→ [Z-Score Data](./Files/z_score.xlsx)
 
-### 🔹 Satisfaction & Turnover
-- Relationship satisfaction was borderline significant (*p* = .054), hinting at a potential soft influence on attrition.
+I removed all outlier values that were outside the normal range (–3 to +3) to ensure realistic results in statistical tests.  
+The final cleaned Excel file is here:  
+→ [Final Excel File](./Files/final_data.xlsx)
+<br><br>
+### 3. SPSS
+I imported the cleaned Excel file into **SPSS** and started statistical modeling and analysis based on:  
+→ [SPSS Dataset (.sav)](./Files/SPSS%20IBM.sav)
 
-### 🔹 Experience vs Retention
-- Weak negative correlation with total working years (*r* = –.182, *p* < .001), suggesting longer-tenured employees are more stable.
+I also provided all statistical outputs from SPSS here:  
+→ [SPSS Output (.spv)](./Files/Output%20SPSS%20IBM.spv)
+<br><br>
+### 4. Reporting
+Based on what I learned, I analyzed the data, explored insights, and wrote the final report using APA structure:  
+→ [Report the Results (PDF)](./Files/SPSS-IBM.pdf)
 
-### 🔹 Factor Analysis (Training & Education)
-- One weak factor emerged with low reliability (α = 0.036). Regression using this factor was statistically significant but weak in predictability.
+Finally, I published the whole project here on GitHub!
+<br><br>
 
-### 🔹 ANOVA – Job Involvement Across Fields
-- No significant differences across education fields (*p* = 0.943).
 
-### 🔹 Salary by Marital Status
-- Significant income gap found (*p* = 0.018), with married employees earning ~$688 more on average.
+<br><br>
 
-### 🔹 Path Model – Satisfaction to Income
-- Structural path model was not statistically supported. Satisfaction did not significantly predict income.
+## 👨‍💼 Final Notes
 
----
+After weeks of completing spss course, I decide to create a project. alongside my course, I completed 16-weeks plan from chatgpt to dive deeper in SPSS and sattistics. This project was completed as part of a structured academic training in applied statistics and HR analytics based on real-world data. I would like to sincerely thank **Dr. Hamid Barani** for his patience, precision, and commitment to teaching SPSS with practical, real-world insight.  
+I’m also deeply grateful to **my parents** for their encouragement, valuable input during the modeling phase, and continuous financial support throughout my SPSS journey.I've learned SPSS not just as a tool, but as a way to develop analytical thinking and looking forward to new academic challenges and deeper interaction with data!
 
-## 🧠 Insights & Implications
+Email: yasin.shamsedini@gmail.com
 
-- **Monetary incentives** appear to have a stronger effect on attrition than emotional or perceptual satisfaction.  
-- Data imbalance can limit the predictive power of logistic models.  
-- Not all perceived workplace metrics translate to behavioral outcomes.  
-- Combining **quantitative modeling** with HR understanding can yield deep and practical insights.
+10 July 2025  
 
----
+Shiraz University
 
-## 🛠 Tools & Technologies
-
-- IBM SPSS Statistics (v26)  
-- Microsoft Excel  
-- GitHub for version control and publication
-
----
-
-## 👨‍💼 Author Note
-
-This project was completed as part of a structured academic training in applied statistics and HR analytics.  
-It demonstrates the integration of statistical methodology with real-world organizational interpretation and APA-standard reporting.
-
----
-
-## 📬 Contact & Collaboration
-
-Interested in collaboration, research, or feedback?
-
-📧 Email: [YourEmail@example.com]  
-🔗 LinkedIn: [Your LinkedIn Profile]
-
----
-
-> 🧩 *“Without interpretation, data is noise. With statistical insight, it becomes strategy.”*
+<br><br>
